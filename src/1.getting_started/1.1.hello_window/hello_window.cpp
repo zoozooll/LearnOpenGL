@@ -1,5 +1,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include "GLRenderer.h"
 
 #include <iostream>
 
@@ -9,6 +10,9 @@ void processInput(GLFWwindow *window);
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
+
+// 全局渲染器实例
+GLRenderer renderer;
 
 int main()
 {
@@ -43,6 +47,9 @@ int main()
         return -1;
     }    
 
+    // 初始化渲染器
+    renderer.initialize();
+
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -51,11 +58,17 @@ int main()
         // -----
         processInput(window);
 
+        // 渲染
+        renderer.render();
+
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+
+    // 清理渲染器
+    renderer.cleanup();
 
     // glfw: terminate, clearing all previously allocated GLFW resources.
     // ------------------------------------------------------------------
@@ -77,5 +90,5 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     // make sure the viewport matches the new window dimensions; note that width and 
     // height will be significantly larger than specified on retina displays.
-    glViewport(0, 0, width, height);
+    renderer.onSizeChanged(width, height);
 }
