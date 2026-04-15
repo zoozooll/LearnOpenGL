@@ -1,23 +1,12 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-
 #include <iostream>
+#include "GLRenderer.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
-const char* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"void main()\n"
-"{\n"
-"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-"}\0";
-const char* fragmentShaderSource = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"void main()\n"
-"{\n"
-"   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-"}\n\0";
+GLRenderer renderer;
 
 int main()
 {
@@ -49,88 +38,18 @@ int main()
         return -1;
     }
 
-    unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-    int success;
-    char infoLog[512];
-    glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-    if (!success)
-    {
-        glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-    unsigned int fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShader);
-    glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-    if (!success)
-    {
-        glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-    }
-    unsigned int shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-    if (!success) {
-        glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
-    }
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
-
-    float vertices[] = {
-         0.5f,  0.5f, 0.0f,
-         0.5f, -0.5f, 0.0f,
-        -0.5f, -0.5f, 0.0f,
-        -0.5f,  0.5f, 0.0f
-    };
-    // Here we create the VBO with DSA.
-    GLuint vbo = 0;
-    // Note how we do not have to call glBindBuffer() after the create call.
-    glCreateBuffers(1, &vbo);
-    glNamedBufferStorage(vbo, sizeof(vertices), vertices, 0x0);
-
-    unsigned int indices[] = {
-        0, 1, 3,
-        1, 2, 3
-    };
-    // Here we create the EBO with DSA while also specifying that the buffer is mutable from the client side.
-    GLuint ebo = 0;
-    glCreateBuffers(1, &ebo);
-    glNamedBufferStorage(ebo, sizeof(indices), nullptr, GL_DYNAMIC_STORAGE_BIT);
-    glNamedBufferSubData(ebo, 0, sizeof(indices), indices);
-
-    // Here we create the VAO with DSA and specify its format.
-    GLuint vao = 0;
-    glCreateVertexArrays(1, &vao);
-
-    // Specifying our vertex layout with the VAO.
-    glEnableVertexArrayAttrib(vao, 0);
-    glVertexArrayAttribFormat(vao, 0, 3, GL_FLOAT, GL_FALSE, 0);
-    glVertexArrayAttribBinding(vao, 0, 0);
-
-    // Binding the VBO and Element Buffer to the VAO.
-    glVertexArrayVertexBuffer(vao, 0, vbo, 0, sizeof(float) * 3);
-    glVertexArrayElementBuffer(vao, ebo);
+    renderer.OnInit();
+    renderer.OnSizeChanged(SCR_WIDTH, SCR_HEIGHT);
 
     while (!glfwWindowShouldClose(window))
     {
         processInput(window);
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
-        glUseProgram(shaderProgram);
-        glBindVertexArray(vao);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        renderer.OnDraw();
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-    glDeleteVertexArrays(1, &vao);
-    glDeleteBuffers(1, &vbo);
-    glDeleteBuffers(1, &ebo);
-    glDeleteProgram(shaderProgram);
+
+    renderer.OnDestroy();
     glfwTerminate();
     return 0;
 }
@@ -143,5 +62,5 @@ void processInput(GLFWwindow* window)
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-    glViewport(0, 0, width, height);
+    renderer.OnSizeChanged(width, height);
 }

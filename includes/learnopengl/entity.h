@@ -6,6 +6,8 @@
 #include <array> //std::array
 #include <memory> //std::unique_ptr
 
+#include "model.h"
+
 class Transform
 {
 protected:
@@ -326,7 +328,7 @@ struct AABB : public BoundingVolume
 	};
 };
 
-Frustum createFrustumFromCamera(const Camera& cam, float aspect, float fovY, float zNear, float zFar)
+inline Frustum createFrustumFromCamera(const Camera& cam, float aspect, float fovY, float zNear, float zFar)
 {
 	Frustum     frustum;
 	const float halfVSide = zFar * tanf(fovY * .5f);
@@ -342,7 +344,7 @@ Frustum createFrustumFromCamera(const Camera& cam, float aspect, float fovY, flo
 	return frustum;
 }
 
-AABB generateAABB(const Model& model)
+inline AABB generateAABB(const Model& model)
 {
 	glm::vec3 minAABB = glm::vec3(std::numeric_limits<float>::max());
 	glm::vec3 maxAABB = glm::vec3(std::numeric_limits<float>::min());
@@ -362,7 +364,7 @@ AABB generateAABB(const Model& model)
 	return AABB(minAABB, maxAABB);
 }
 
-Sphere generateSphereBV(const Model& model)
+inline Sphere generateSphereBV(const Model& model)
 {
 	glm::vec3 minAABB = glm::vec3(std::numeric_limits<float>::max());
 	glm::vec3 maxAABB = glm::vec3(std::numeric_limits<float>::min());
