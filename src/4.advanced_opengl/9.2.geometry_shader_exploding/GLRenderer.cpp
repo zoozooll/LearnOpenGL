@@ -1,12 +1,12 @@
 #include "GLRenderer.h"
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <learnopengl/shader.h>
 #include <learnopengl/filesystem.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 
 GLRenderer::GLRenderer() : m_pShader(nullptr), m_pNanosuit(nullptr),
@@ -39,7 +39,7 @@ void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
@@ -60,7 +60,7 @@ void GLRenderer::OnDraw()
         m_pShader->setMat4("model", model);
 
         // add time component to geometry shader in the form of a uniform
-        m_pShader->setFloat("time", static_cast<float>(glfwGetTime()));
+        m_pShader->setFloat("time", static_cast<float>(TimeUtils::GetTime()));
 
         // draw model
         m_pNanosuit->Draw(*m_pShader);

@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 #include <cmath>
 
@@ -101,7 +101,7 @@ void GLRenderer::OnDraw()
     glUseProgram(m_shaderProgram);
 
     // update shader uniform
-    double  timeValue = glfwGetTime();
+    double  timeValue = TimeUtils::GetTime();
     float greenValue = static_cast<float>(sin(timeValue) / 2.0 + 0.5);
     int vertexColorLocation = glGetUniformLocation(m_shaderProgram, "ourColor");
     glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);

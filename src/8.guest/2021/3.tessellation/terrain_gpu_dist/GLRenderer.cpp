@@ -1,8 +1,8 @@
 #include "GLRenderer.h"
-#include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <learnopengl/shader_t.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 #include <vector>
 
@@ -116,7 +116,7 @@ void GLRenderer::OnSizeChanged(int width, int height)
 
 void GLRenderer::OnDraw()
 {
-    float currentFrame = glfwGetTime();
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 

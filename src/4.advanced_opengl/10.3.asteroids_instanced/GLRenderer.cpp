@@ -1,12 +1,12 @@
 #include "GLRenderer.h"
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <learnopengl/shader.h>
 #include <learnopengl/filesystem.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 #include <cmath>
 
@@ -35,7 +35,7 @@ void GLRenderer::OnInit()
     // generate a large list of semi-random model transformation matrices
     // ------------------------------------------------------------------
     glm::mat4* modelMatrices = new glm::mat4[m_amount];
-    srand(static_cast<unsigned int>(glfwGetTime())); // initialize random seed
+    srand(static_cast<unsigned int>(TimeUtils::GetTime())); // initialize random seed
     float radius = 150.0;
     float offset = 25.0f;
     for (unsigned int i = 0; i < m_amount; i++)
@@ -106,7 +106,7 @@ void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 

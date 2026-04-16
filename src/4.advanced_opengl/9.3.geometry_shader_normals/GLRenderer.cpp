@@ -1,12 +1,12 @@
 #include "GLRenderer.h"
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <learnopengl/shader.h>
 #include <learnopengl/filesystem.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 
 GLRenderer::GLRenderer() : m_pShader(nullptr), m_pNormalShader(nullptr), m_pBackpack(nullptr),
@@ -41,7 +41,7 @@ void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 

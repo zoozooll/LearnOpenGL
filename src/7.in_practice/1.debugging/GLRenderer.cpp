@@ -1,12 +1,12 @@
 #include "GLRenderer.h"
 #include <glad/glad.h>
-#include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <learnopengl/shader.h>
 #include <learnopengl/filesystem.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 
 GLRenderer::GLRenderer() : m_pShader(nullptr), m_cubeVAO(0), m_cubeVBO(0), m_texture(0), m_width(800), m_height(600)
@@ -184,7 +184,7 @@ void GLRenderer::OnDraw()
         m_pShader->setMat4("projection", projection);
 
         float rotationSpeed = 10.0f;
-        float angle = (float)glfwGetTime() * rotationSpeed;
+        float angle = (float)TimeUtils::GetTime() * rotationSpeed;
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0, 0.0f, -2.5));
         model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 1.0f, 1.0f));

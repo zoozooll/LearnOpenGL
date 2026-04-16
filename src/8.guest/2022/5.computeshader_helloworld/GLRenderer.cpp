@@ -1,7 +1,7 @@
 #include "GLRenderer.h"
-#include <GLFW/glfw3.h>
 #include <learnopengl/shader_m.h>
 #include <learnopengl/shader_c.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 
 const unsigned int TEXTURE_WIDTH = 1000, TEXTURE_HEIGHT = 1000;
@@ -40,7 +40,7 @@ void GLRenderer::OnSizeChanged(int width, int height)
 
 void GLRenderer::OnDraw()
 {
-    float currentFrame = glfwGetTime();
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     m_deltaTime = currentFrame - m_lastFrame;
     m_lastFrame = currentFrame;
     if(m_fCounter > 500) {

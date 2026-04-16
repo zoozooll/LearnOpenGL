@@ -1,9 +1,9 @@
 #include "GLRenderer.h"
-#include <GLFW/glfw3.h>
 #include <stb_image.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <learnopengl/shader.h>
 #include <learnopengl/filesystem.h>
+#include <learnopengl/time_utils.h>
 #include <iostream>
 
 static unsigned int quadVAO = 0;
@@ -241,7 +241,7 @@ void GLRenderer::OnSizeChanged(int width, int height)
 
 void GLRenderer::OnDraw()
 {
-    float currentFrame = (float)glfwGetTime();
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
