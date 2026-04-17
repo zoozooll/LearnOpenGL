@@ -13,16 +13,29 @@ private:
 public:
   static std::string getPath(const std::string& path)
   {
-    static std::string(*pathBuilder)(std::string const &) = getPathBuilder();
-    return (*pathBuilder)(path);
+    return getPathBuilder()(path);
+  }
+
+  static void setRoot(const std::string& path)
+  {
+    getRoot() = path;
   }
 
 private:
-  static std::string const & getRoot()
+  static std::string & getRoot()
   {
-    static char const * envRoot = getenv("LOGL_ROOT_PATH");
-    static char const * givenRoot = (envRoot != nullptr ? envRoot : logl_root);
-    static std::string root = (givenRoot != nullptr ? givenRoot : "");
+    static std::string root = []() {
+      char const * envRoot = getenv("LOGL_ROOT_PATH");
+      if (envRoot != nullptr)
+        return std::string(envRoot);
+
+#ifndef __ANDROID__
+      return std::string(logl_root);
+#else
+      return std::string("");
+#endif
+    }();
+
     return root;
   }
 
@@ -42,10 +55,12 @@ private:
 
   static std::string getPathRelativeBinary(const std::string& path)
   {
+#ifndef __ANDROID__
     return "../../../" + path;
+#else
+    return path;
+#endif
   }
-
-
 };
 
 // FILESYSTEM_H
