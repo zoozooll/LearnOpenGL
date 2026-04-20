@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
+#include <learnopengl/time_utils.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -166,7 +166,7 @@ void GLRenderer::OnDraw()
     glm::mat4 model         = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
     glm::mat4 view          = glm::mat4(1.0f);
     glm::mat4 projection    = glm::mat4(1.0f);
-    model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.5f, 1.0f, 0.0f));
+    model = glm::rotate(model, (float)TimeUtils::GetTime(), glm::vec3(0.5f, 1.0f, 0.0f));
     view  = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
     projection = glm::perspective(glm::radians(45.0f), (float)800 / (float)600, 0.1f, 100.0f);
     // retrieve the matrix uniform locations

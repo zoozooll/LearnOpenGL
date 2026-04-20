@@ -1,5 +1,5 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
+#include <learnopengl/gl_header.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>

@@ -1,5 +1,5 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
+#include <learnopengl/gl_header.h>
 #include <learnopengl/time_utils.h>
 #include <iostream>
 #include <cmath>

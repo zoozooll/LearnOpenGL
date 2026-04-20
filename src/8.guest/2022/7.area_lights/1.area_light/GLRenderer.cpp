@@ -176,8 +176,8 @@ unsigned int GLRenderer::loadTexture(const char *path, bool gammaCorrection) {
     if (data) {
         GLenum internalFormat, dataFormat;
         if (nrComponents == 1) internalFormat = dataFormat = GL_RED;
-        else if (nrComponents == 3) { internalFormat = gammaCorrection ? GL_SRGB : GL_RGB; dataFormat = GL_RGB; }
-        else if (nrComponents == 4) { internalFormat = gammaCorrection ? GL_SRGB_ALPHA : GL_RGBA; dataFormat = GL_RGBA; }
+        else if (nrComponents == 3) { internalFormat = gammaCorrection ? GL_SRGB8 : GL_RGB; dataFormat = GL_RGB; }
+        else if (nrComponents == 4) { internalFormat = gammaCorrection ? GL_SRGB8_ALPHA8 : GL_RGBA; dataFormat = GL_RGBA; }
         glBindTexture(GL_TEXTURE_2D, textureID);
         glTexImage2D(GL_TEXTURE_2D, 0, internalFormat, width, height, 0, dataFormat, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);

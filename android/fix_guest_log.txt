@@ -1,0 +1,75 @@
+Starting to fix guest module paths...
+
+Processing: :8.guest:2020:oit
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2020\oit
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2020\oit
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2020:skeletal_animation
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2020\skeletal_animation
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2020\skeletal_animation
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2021:1.scene:1.scene_graph
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_1.scene\1.scene_graph
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2021\1.scene\1.scene_graph
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2021:1.scene:2.frustum_culling
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_1.scene\2.frustum_culling
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2021\1.scene\2.frustum_culling
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2021:2.csm
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021\2.csm
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2021\2.csm
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2021:3.tessellation:terrain_gpu_dist
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_3.tessellation\terrain_gpu_dist
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2021\3.tessellation\terrain_gpu_dist
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2021:3.tessellation:terrain_cpu_src
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_3.tessellation\terrain_cpu_src
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2021\3.tessellation\terrain_cpu_src
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2021:4.dsa
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021\4.dsa
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2021\4.dsa
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2022:5.computeshader_helloworld
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022\5.computeshader_helloworld
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2022\5.computeshader_helloworld
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2022:6.physically_based_bloom
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022\6.physically_based_bloom
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2022\6.physically_based_bloom
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2022:7.area_lights:1.area_light
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022_7.area_lights\1.area_light
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2022\7.area_lights\1.area_light
+  Created parent directories
+  Moved successfully!
+
+Processing: :8.guest:2022:7.area_lights:2.multiple_area_lights
+  Old path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022_7.area_lights\2.multiple_area_lights
+  New path: g:\Workspaces\cpp\LearnOpenGL\android\8.guest\2022\7.area_lights\2.multiple_area_lights
+  Created parent directories
+  Moved successfully!
+
+Finished processing guest modules!

@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
+#include <learnopengl/time_utils.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -129,7 +129,7 @@ void GLRenderer::OnDraw()
     // create transformations
     glm::mat4 transform = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
     transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-    transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+    transform = glm::rotate(transform, (float)TimeUtils::GetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
 
     // get matrix's uniform location and set matrix
     if(m_pShader)

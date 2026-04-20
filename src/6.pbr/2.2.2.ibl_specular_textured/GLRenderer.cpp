@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
+#include <learnopengl/time_utils.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -304,7 +304,7 @@ void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
@@ -428,7 +428,7 @@ void GLRenderer::OnDraw()
         // keeps the codeprint small.
         for (unsigned int i = 0; i < sizeof(lightPositions) / sizeof(lightPositions[0]); ++i)
         {
-            glm::vec3 newPos = lightPositions[i] + glm::vec3(sin(glfwGetTime() * 5.0) * 5.0, 0.0, 0.0);
+            glm::vec3 newPos = lightPositions[i] + glm::vec3(sin(TimeUtils::GetTime() * 5.0) * 5.0, 0.0, 0.0);
             newPos = lightPositions[i];
             pbrShader->setVec3("lightPositions[" + std::to_string(i) + "]", newPos);
             pbrShader->setVec3("lightColors[" + std::to_string(i) + "]", lightColors[i]);

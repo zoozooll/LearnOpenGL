@@ -1,5 +1,5 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
+#include <learnopengl/gl_header.h>
 
 void GLRenderer::OnInit()
 {

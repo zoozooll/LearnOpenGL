@@ -1,7 +1,7 @@
 #ifndef GLRENDERER_H
 #define GLRENDERER_H
 
-#include <glad/glad.h>
+#include <learnopengl/gl_header.h>
 #include <glm/glm.hpp>
 #include <learnopengl/camera.h>
 #include <learnopengl/animator.h>

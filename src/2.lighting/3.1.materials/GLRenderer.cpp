@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
+#include <learnopengl/time_utils.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -106,7 +106,7 @@ void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
@@ -124,9 +124,9 @@ void GLRenderer::OnDraw()
 
         // light properties
         glm::vec3 lightColor;
-        lightColor.x = static_cast<float>(sin(glfwGetTime() * 2.0));
-        lightColor.y = static_cast<float>(sin(glfwGetTime() * 0.7));
-        lightColor.z = static_cast<float>(sin(glfwGetTime() * 1.3));
+        lightColor.x = static_cast<float>(sin(TimeUtils::GetTime() * 2.0));
+        lightColor.y = static_cast<float>(sin(TimeUtils::GetTime() * 0.7));
+        lightColor.z = static_cast<float>(sin(TimeUtils::GetTime() * 1.3));
         glm::vec3 diffuseColor = lightColor   * glm::vec3(0.5f); // decrease the influence
         glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f); // low influence
         m_pLightingShader->setVec3("light.ambient", ambientColor);

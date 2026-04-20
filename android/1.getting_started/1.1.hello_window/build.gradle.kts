@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.learnopengl.getting_started.hello_window"
+    namespace = "com.example.learnopengl"
     compileSdk = 36
 
     defaultConfig {
@@ -18,6 +18,8 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags("")
+                val rootPath = project.rootDir.parentFile.absolutePath.replace("\\", "/")
+                arguments("-DLEARN_OPENGL_ROOT_FOLDER=$rootPath")
             }
         }
     }

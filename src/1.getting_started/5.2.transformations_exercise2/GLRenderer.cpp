@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
+#include <learnopengl/time_utils.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -132,7 +132,7 @@ void GLRenderer::OnDraw()
     // first container
     // ---------------
     transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-    transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+    transform = glm::rotate(transform, (float)TimeUtils::GetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
     // get their uniform location and set matrix (using glm::value_ptr)
     unsigned int transformLoc = glGetUniformLocation(m_pShader->ID, "transform");
     glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
@@ -145,7 +145,7 @@ void GLRenderer::OnDraw()
     // ---------------------
     transform = glm::mat4(1.0f); // reset it to identity matrix
     transform = glm::translate(transform, glm::vec3(-0.5f, 0.5f, 0.0f));
-    float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+    float scaleAmount = static_cast<float>(sin(TimeUtils::GetTime()));
     transform = glm::scale(transform, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
     glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &transform[0][0]); // this time take the matrix value array's first element as its memory pointer value
 

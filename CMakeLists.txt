@@ -19,13 +19,24 @@ endif(WIN32)
 
 link_directories(${CMAKE_SOURCE_DIR}/lib)
 
+# Add external libraries from source
+add_subdirectory(external/glfw)
+add_subdirectory(external/assimp)
+
+# GLM is header-only, so we just need to include its directory
+include_directories(external/glm)
+
+message(STATUS "GLM included from external/glm")
+message(STATUS "GLFW3 included from external/glfw")
+message(STATUS "ASSIMP included from external/assimp")
+
 # find the required packages
-find_package(GLM REQUIRED)
-message(STATUS "GLM included at ${GLM_INCLUDE_DIR}")
-find_package(GLFW3 REQUIRED)
-message(STATUS "Found GLFW3 in ${GLFW3_INCLUDE_DIR}")
-find_package(ASSIMP REQUIRED)
-message(STATUS "Found ASSIMP in ${ASSIMP_INCLUDE_DIR}")
+# find_package(GLM REQUIRED)
+# message(STATUS "GLM included at ${GLM_INCLUDE_DIR}")
+# find_package(GLFW3 REQUIRED)
+# message(STATUS "Found GLFW3 in ${GLFW3_INCLUDE_DIR}")
+# find_package(ASSIMP REQUIRED)
+# message(STATUS "Found ASSIMP in ${ASSIMP_INCLUDE_DIR}")
 # find_package(SOIL REQUIRED)
 # message(STATUS "Found SOIL in ${SOIL_INCLUDE_DIR}")
 # find_package(GLEW REQUIRED)
@@ -36,7 +47,7 @@ if(APPLE)
 endif(APPLE)
 
 if(WIN32)
-  set(LIBS glfw3 opengl32 assimp freetype irrKlang)
+  set(LIBS glfw opengl32 assimp freetype irrKlang) # Changed glfw3 to glfw
   add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 elseif(UNIX AND NOT APPLE)
   set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
@@ -45,7 +56,7 @@ elseif(UNIX AND NOT APPLE)
   find_package(X11 REQUIRED)
   # note that the order is important for setting the libs
   # use pkg-config --libs $(pkg-config --print-requires --print-requires-private glfw3) in a terminal to confirm
-  set(LIBS ${GLFW3_LIBRARY} X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread freetype ${ASSIMP_LIBRARY})
+  set(LIBS glfw X11 Xrandr Xinerama Xi Xxf86vm Xcursor GL dl pthread freetype assimp) # Changed ${GLFW3_LIBRARY} to glfw and ${ASSIMP_LIBRARY} to assimp
   set (CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl")
 elseif(APPLE)
   INCLUDE_DIRECTORIES(/System/Library/Frameworks)
@@ -55,7 +66,7 @@ elseif(APPLE)
   FIND_LIBRARY(CoreVideo_LIBRARY CoreVideo)
   MARK_AS_ADVANCED(COCOA_LIBRARY OpenGL_LIBRARY)
   SET(APPLE_LIBS ${COCOA_LIBRARY} ${IOKit_LIBRARY} ${OpenGL_LIBRARY} ${CoreVideo_LIBRARY})
-  SET(APPLE_LIBS ${APPLE_LIBS} ${GLFW3_LIBRARY} ${ASSIMP_LIBRARY} ${FREETYPE_LIBRARIES})
+  SET(APPLE_LIBS ${APPLE_LIBS} glfw assimp ${FREETYPE_LIBRARIES}) # Changed ${GLFW3_LIBRARY} to glfw and ${ASSIMP_LIBRARY} to assimp
   set(LIBS ${LIBS} ${APPLE_LIBS})
 else()
   set(LIBS )
@@ -163,7 +174,8 @@ set(6.pbr
     1.2.lighting_textured
     2.1.1.ibl_irradiance_conversion
     2.1.2.ibl_irradiance
-    2.2.1.ibl_specular
+    2.2.1.ibl_irradiance
+    2.2.2.ibl_specular
     2.2.2.ibl_specular_textured
 )
 

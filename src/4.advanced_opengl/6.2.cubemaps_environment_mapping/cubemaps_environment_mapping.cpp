@@ -11,6 +11,12 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 
+// settings
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
+
+GLRenderer renderer;
+
 int main()
 {
     // glfw: initialize and configure
@@ -26,8 +32,8 @@ int main()
 
     // glfw window creation
     // --------------------
-    GLRenderer renderer;
-    GLFWwindow* window = glfwCreateWindow(renderer.scrWidth, renderer.scrHeight, "LearnOpenGL", NULL, NULL);
+
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -53,6 +59,7 @@ int main()
 
     // Initialize the renderer
     renderer.OnInit();
+    renderer.OnSizeChanged(SCR_WIDTH, SCR_HEIGHT);
 
     // render loop
     // -----------
@@ -84,42 +91,53 @@ int main()
 // ---------------------------------------------------------------------------------------------------------
 void processInput(GLFWwindow *window)
 {
-    GLRenderer* renderer = static_cast<GLRenderer*>(glfwGetWindowUserPointer(window));
-    if (renderer)
-    {
-        renderer->ProcessInput(window);
-    }
+    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+        glfwSetWindowShouldClose(window, true);
+
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        renderer.camera.ProcessKeyboard(FORWARD, renderer.deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        renderer.camera.ProcessKeyboard(BACKWARD, renderer.deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        renderer.camera.ProcessKeyboard(LEFT, renderer.deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        renderer.camera.ProcessKeyboard(RIGHT, renderer.deltaTime);
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback function executes
 // ---------------------------------------------------------------------------------------------
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-    GLRenderer* renderer = static_cast<GLRenderer*>(glfwGetWindowUserPointer(window));
-    if (renderer)
-    {
-        renderer->OnSizeChanged(width, height);
-    }
+    renderer.OnSizeChanged(width, height);
 }
+
 
 // glfw: whenever the mouse moves, this callback is called
 // -------------------------------------------------------
 void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 {
-    GLRenderer* renderer = static_cast<GLRenderer*>(glfwGetWindowUserPointer(window));
-    if (renderer)
+    float xpos = static_cast<float>(xposIn);
+    float ypos = static_cast<float>(yposIn);
+
+    if (renderer.firstMouse)
     {
-        renderer->MouseCallback(xposIn, yposIn);
+        renderer.lastX = xpos;
+        renderer.lastY = ypos;
+        renderer.firstMouse = false;
     }
+
+    float xoffset = xpos - renderer.lastX;
+    float yoffset = renderer.lastY - ypos; // reversed since y-coordinates go from bottom to top
+
+    renderer.lastX = xpos;
+    renderer.lastY = ypos;
+
+    renderer.camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
 // ----------------------------------------------------------------------
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
-    GLRenderer* renderer = static_cast<GLRenderer*>(glfwGetWindowUserPointer(window));
-    if (renderer)
-    {
-        renderer->ScrollCallback(xoffset, yoffset);
-    }
+    renderer.camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }

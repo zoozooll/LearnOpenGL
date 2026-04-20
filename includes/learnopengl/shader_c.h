@@ -1,7 +1,7 @@
 #ifndef COMPUTE_SHADER_H
 #define COMPUTE_SHADER_H
 
-#include <glad/glad.h>
+#include <learnopengl/gl_header.h>
 #include <glm/glm.hpp>
 
 #include <string>

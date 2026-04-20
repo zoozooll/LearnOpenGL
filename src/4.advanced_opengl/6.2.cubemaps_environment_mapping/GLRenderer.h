@@ -1,8 +1,7 @@
 #ifndef GLRENDERER_H
 #define GLRENDERER_H
 
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
 #include <learnopengl/camera.h>
 #include <glm/glm.hpp>
 #include <vector>
@@ -21,10 +20,6 @@ public:
     virtual void OnDraw();
     virtual void OnDestroy();
 
-    void ProcessInput(GLFWwindow *window);
-    void MouseCallback(double xposIn, double yposIn);
-    void ScrollCallback(double xoffset, double yoffset);
-
     // Camera
     Camera camera;
     float lastX;
@@ -34,10 +29,6 @@ public:
     // Timing
     float deltaTime;
     float lastFrame;
-
-    int scrWidth;
-    int scrHeight;
-
 private:
     Shader* m_pShader;
     Shader* m_pSkyboxShader;

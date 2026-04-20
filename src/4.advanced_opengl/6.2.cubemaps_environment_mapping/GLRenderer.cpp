@@ -1,7 +1,7 @@
 #include "GLRenderer.h"
 
 #include <stb_image.h>
-
+#include <learnopengl/time_utils.h>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
@@ -18,13 +18,11 @@ GLRenderer::GLRenderer() :
     m_pShader(nullptr),
     m_pSkyboxShader(nullptr),
     camera(glm::vec3(0.0f, 0.0f, 3.0f)),
-    lastX(SCR_WIDTH_DEFAULT / 2.0f),
-    lastY(SCR_HEIGHT_DEFAULT / 2.0f),
+    lastX(800.f / 2.0f),
+    lastY(600.f / 2.0f),
     firstMouse(true),
     deltaTime(0.0f),
-    lastFrame(0.0f),
-    scrWidth(SCR_WIDTH_DEFAULT),
-    scrHeight(SCR_HEIGHT_DEFAULT)
+    lastFrame(0.0f)
 {
 }
 
@@ -174,15 +172,13 @@ void GLRenderer::OnInit()
 void GLRenderer::OnSizeChanged(int width, int height)
 {
     glViewport(0, 0, width, height);
-    scrWidth = width;
-    scrHeight = height;
 }
 
 void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
@@ -195,7 +191,7 @@ void GLRenderer::OnDraw()
     m_pShader->use();
     glm::mat4 model = glm::mat4(1.0f);
     glm::mat4 view = camera.GetViewMatrix();
-    glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)scrWidth / (float)scrHeight, 0.1f, 100.0f);
+    glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), 800.f / 600.f, 0.1f, 100.0f);
     m_pShader->setMat4("model", model);
     m_pShader->setMat4("view", view);
     m_pShader->setMat4("projection", projection);
@@ -241,45 +237,6 @@ void GLRenderer::OnDestroy()
     glDeleteBuffers(1, &skyboxVBO);
 }
 
-void GLRenderer::ProcessInput(GLFWwindow *window)
-{
-    if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, true);
-
-    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, deltaTime);
-}
-
-void GLRenderer::MouseCallback(double xposIn, double yposIn)
-{
-    float xpos = static_cast<float>(xposIn);
-    float ypos = static_cast<float>(yposIn);
-    if (firstMouse)
-    {
-        lastX = xpos;
-        lastY = ypos;
-        firstMouse = false;
-    }
-
-    float xoffset = xpos - lastX;
-    float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
-
-    lastX = xpos;
-    lastY = ypos;
-
-    camera.ProcessMouseMovement(xoffset, yoffset);
-}
-
-void GLRenderer::ScrollCallback(double xoffset, double yoffset)
-{
-    camera.ProcessMouseScroll(static_cast<float>(yoffset));
-}
 
 // utility function for loading a 2D texture from file
 // ---------------------------------------------------

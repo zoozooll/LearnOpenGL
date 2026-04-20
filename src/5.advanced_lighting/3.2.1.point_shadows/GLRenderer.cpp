@@ -1,6 +1,6 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
+#include <learnopengl/gl_header.h>
+#include <learnopengl/time_utils.h>
 #include <stb_image.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -129,13 +129,13 @@ void GLRenderer::OnDraw()
 {
     // per-frame time logic
     // --------------------
-    float currentFrame = static_cast<float>(glfwGetTime());
+    float currentFrame = static_cast<float>(TimeUtils::GetTime());
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
 
     // move light position over time
     glm::vec3 lightPos(0.0f, 0.0f, 0.0f);
-    lightPos.z = static_cast<float>(sin(glfwGetTime() * 0.5) * 3.0);
+    lightPos.z = static_cast<float>(sin(TimeUtils::GetTime() * 0.5) * 3.0);
 
     // render
     // ------

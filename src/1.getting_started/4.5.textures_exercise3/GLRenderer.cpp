@@ -1,5 +1,5 @@
 #include "GLRenderer.h"
-#include <glad/glad.h>
+#include <learnopengl/gl_header.h>
 #include <stb_image.h>
 #include <learnopengl/filesystem.h>
 #include <learnopengl/shader_s.h>

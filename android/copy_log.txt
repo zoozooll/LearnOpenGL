@@ -1,0 +1,1444 @@
+Starting script...
+Source path: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\1.1.hello_window
+Source path exists: True
+Modules count: 91
+Items to copy: ['build.gradle.kts', 'src']
+
+Processing module 1/91: :1.getting_started:1.2.hello_window_clear
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\1.2.hello_window_clear
+  ApplicationId: com.example.learnopengl.getting_started.hello_window_clear
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 2/91: :1.getting_started:2.1.hello_triangle
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\2.1.hello_triangle
+  ApplicationId: com.example.learnopengl.getting_started.hello_triangle
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 3/91: :1.getting_started:2.2.hello_triangle_indexed
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\2.2.hello_triangle_indexed
+  ApplicationId: com.example.learnopengl.getting_started.hello_triangle_indexed
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 4/91: :1.getting_started:2.3.hello_triangle_exercise1
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\2.3.hello_triangle_exercise1
+  ApplicationId: com.example.learnopengl.getting_started.hello_triangle_exercise1
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 5/91: :1.getting_started:2.4.hello_triangle_exercise2
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\2.4.hello_triangle_exercise2
+  ApplicationId: com.example.learnopengl.getting_started.hello_triangle_exercise2
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 6/91: :1.getting_started:2.5.hello_triangle_exercise3
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\2.5.hello_triangle_exercise3
+  ApplicationId: com.example.learnopengl.getting_started.hello_triangle_exercise3
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 7/91: :1.getting_started:3.1.shaders_uniform
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\3.1.shaders_uniform
+  ApplicationId: com.example.learnopengl.getting_started.shaders_uniform
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 8/91: :1.getting_started:3.2.shaders_interpolation
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\3.2.shaders_interpolation
+  ApplicationId: com.example.learnopengl.getting_started.shaders_interpolation
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 9/91: :1.getting_started:3.3.shaders_class
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\3.3.shaders_class
+  ApplicationId: com.example.learnopengl.getting_started.shaders_class
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 10/91: :1.getting_started:4.1.textures
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\4.1.textures
+  ApplicationId: com.example.learnopengl.getting_started.textures
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 11/91: :1.getting_started:4.2.textures_combined
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\4.2.textures_combined
+  ApplicationId: com.example.learnopengl.getting_started.textures_combined
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 12/91: :1.getting_started:4.4.textures_exercise2
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\4.4.textures_exercise2
+  ApplicationId: com.example.learnopengl.getting_started.textures_exercise2
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 13/91: :1.getting_started:4.5.textures_exercise3
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\4.5.textures_exercise3
+  ApplicationId: com.example.learnopengl.getting_started.textures_exercise3
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 14/91: :1.getting_started:4.6.textures_exercise4
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\4.6.textures_exercise4
+  ApplicationId: com.example.learnopengl.getting_started.textures_exercise4
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 15/91: :1.getting_started:5.1.transformations
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\5.1.transformations
+  ApplicationId: com.example.learnopengl.getting_started.transformations
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 16/91: :1.getting_started:5.2.transformations_exercise2
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\5.2.transformations_exercise2
+  ApplicationId: com.example.learnopengl.getting_started.transformations_exercise2
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 17/91: :1.getting_started:6.1.coordinate_systems
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\6.1.coordinate_systems
+  ApplicationId: com.example.learnopengl.getting_started.coordinate_systems
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 18/91: :1.getting_started:6.2.coordinate_systems_depth
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\6.2.coordinate_systems_depth
+  ApplicationId: com.example.learnopengl.getting_started.coordinate_systems_depth
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 19/91: :1.getting_started:6.3.coordinate_systems_multiple
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\6.3.coordinate_systems_multiple
+  ApplicationId: com.example.learnopengl.getting_started.coordinate_systems_multiple
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 20/91: :1.getting_started:7.1.camera_circle
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\7.1.camera_circle
+  ApplicationId: com.example.learnopengl.getting_started.camera_circle
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 21/91: :1.getting_started:7.2.camera_keyboard_dt
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\7.2.camera_keyboard_dt
+  ApplicationId: com.example.learnopengl.getting_started.camera_keyboard_dt
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 22/91: :1.getting_started:7.3.camera_mouse_zoom
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\7.3.camera_mouse_zoom
+  ApplicationId: com.example.learnopengl.getting_started.camera_mouse_zoom
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 23/91: :1.getting_started:7.4.camera_class
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\1.getting_started\7.4.camera_class
+  ApplicationId: com.example.learnopengl.getting_started.camera_class
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 24/91: :2.lighting:1.colors
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\1.colors
+  ApplicationId: com.example.learnopengl.lighting.colors
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 25/91: :2.lighting:2.1.basic_lighting_diffuse
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\2.1.basic_lighting_diffuse
+  ApplicationId: com.example.learnopengl.lighting.basic_lighting_diffuse
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 26/91: :2.lighting:2.2.basic_lighting_specular
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\2.2.basic_lighting_specular
+  ApplicationId: com.example.learnopengl.lighting.basic_lighting_specular
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 27/91: :2.lighting:3.1.materials
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\3.1.materials
+  ApplicationId: com.example.learnopengl.lighting.materials
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 28/91: :2.lighting:3.2.materials_exercise1
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\3.2.materials_exercise1
+  ApplicationId: com.example.learnopengl.lighting.materials_exercise1
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 29/91: :2.lighting:4.1.lighting_maps_diffuse_map
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\4.1.lighting_maps_diffuse_map
+  ApplicationId: com.example.learnopengl.lighting.lighting_maps_diffuse_map
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 30/91: :2.lighting:4.2.lighting_maps_specular_map
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\4.2.lighting_maps_specular_map
+  ApplicationId: com.example.learnopengl.lighting.lighting_maps_specular_map
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 31/91: :2.lighting:4.4.lighting_maps_exercise4
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\4.4.lighting_maps_exercise4
+  ApplicationId: com.example.learnopengl.lighting.lighting_maps_exercise4
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 32/91: :2.lighting:5.1.light_casters_directional
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\5.1.light_casters_directional
+  ApplicationId: com.example.learnopengl.lighting.light_casters_directional
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 33/91: :2.lighting:5.2.light_casters_point
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\5.2.light_casters_point
+  ApplicationId: com.example.learnopengl.lighting.light_casters_point
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 34/91: :2.lighting:5.3.light_casters_spot
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\5.3.light_casters_spot
+  ApplicationId: com.example.learnopengl.lighting.light_casters_spot
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 35/91: :2.lighting:5.4.light_casters_spot_soft
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\5.4.light_casters_spot_soft
+  ApplicationId: com.example.learnopengl.lighting.light_casters_spot_soft
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 36/91: :2.lighting:6.multiple_lights
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\2.lighting\6.multiple_lights
+  ApplicationId: com.example.learnopengl.lighting.multiple_lights
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 37/91: :3.model_loading:1.model_loading
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\3.model_loading\1.model_loading
+  ApplicationId: com.example.learnopengl.model_loading.model_loading
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 38/91: :4.advanced_opengl:1.1.depth_testing
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\1.1.depth_testing
+  ApplicationId: com.example.learnopengl.advanced_opengl.depth_testing
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 39/91: :4.advanced_opengl:1.2.depth_testing_view
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\1.2.depth_testing_view
+  ApplicationId: com.example.learnopengl.advanced_opengl.depth_testing_view
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 40/91: :4.advanced_opengl:2.stencil_testing
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\2.stencil_testing
+  ApplicationId: com.example.learnopengl.advanced_opengl.stencil_testing
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 41/91: :4.advanced_opengl:3.1.blending_discard
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\3.1.blending_discard
+  ApplicationId: com.example.learnopengl.advanced_opengl.blending_discard
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 42/91: :4.advanced_opengl:3.2.blending_sort
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\3.2.blending_sort
+  ApplicationId: com.example.learnopengl.advanced_opengl.blending_sort
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 43/91: :4.advanced_opengl:5.1.framebuffers
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\5.1.framebuffers
+  ApplicationId: com.example.learnopengl.advanced_opengl.framebuffers
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 44/91: :4.advanced_opengl:5.2.framebuffers_exercise1
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\5.2.framebuffers_exercise1
+  ApplicationId: com.example.learnopengl.advanced_opengl.framebuffers_exercise1
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 45/91: :4.advanced_opengl:6.1.cubemaps_skybox
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\6.1.cubemaps_skybox
+  ApplicationId: com.example.learnopengl.advanced_opengl.cubemaps_skybox
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 46/91: :4.advanced_opengl:6.2.cubemaps_environment_mapping
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\6.2.cubemaps_environment_mapping
+  ApplicationId: com.example.learnopengl.advanced_opengl.cubemaps_environment_mapping
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 47/91: :4.advanced_opengl:8.advanced_glsl_ubo
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\8.advanced_glsl_ubo
+  ApplicationId: com.example.learnopengl.advanced_opengl.advanced_glsl_ubo
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 48/91: :4.advanced_opengl:9.1.geometry_shader_houses
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\9.1.geometry_shader_houses
+  ApplicationId: com.example.learnopengl.advanced_opengl.geometry_shader_houses
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 49/91: :4.advanced_opengl:9.2.geometry_shader_exploding
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\9.2.geometry_shader_exploding
+  ApplicationId: com.example.learnopengl.advanced_opengl.geometry_shader_exploding
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 50/91: :4.advanced_opengl:9.3.geometry_shader_normals
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\9.3.geometry_shader_normals
+  ApplicationId: com.example.learnopengl.advanced_opengl.geometry_shader_normals
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 51/91: :4.advanced_opengl:10.1.instancing_quads
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\10.1.instancing_quads
+  ApplicationId: com.example.learnopengl.advanced_opengl.instancing_quads
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 52/91: :4.advanced_opengl:10.2.asteroids
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\10.2.asteroids
+  ApplicationId: com.example.learnopengl.advanced_opengl.asteroids
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 53/91: :4.advanced_opengl:10.3.asteroids_instanced
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\10.3.asteroids_instanced
+  ApplicationId: com.example.learnopengl.advanced_opengl.asteroids_instanced
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 54/91: :4.advanced_opengl:11.1.anti_aliasing_msaa
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\11.1.anti_aliasing_msaa
+  ApplicationId: com.example.learnopengl.advanced_opengl.anti_aliasing_msaa
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 55/91: :4.advanced_opengl:11.2.anti_aliasing_offscreen
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\4.advanced_opengl\11.2.anti_aliasing_offscreen
+  ApplicationId: com.example.learnopengl.advanced_opengl.anti_aliasing_offscreen
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 56/91: :5.advanced_lighting:1.advanced_lighting
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\1.advanced_lighting
+  ApplicationId: com.example.learnopengl.advanced_lighting.advanced_lighting
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 57/91: :5.advanced_lighting:2.gamma_correction
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\2.gamma_correction
+  ApplicationId: com.example.learnopengl.advanced_lighting.gamma_correction
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 58/91: :5.advanced_lighting:3.1.1.shadow_mapping_depth
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\3.1.1.shadow_mapping_depth
+  ApplicationId: com.example.learnopengl.advanced_lighting.shadow_mapping_depth
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 59/91: :5.advanced_lighting:3.1.2.shadow_mapping_base
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\3.1.2.shadow_mapping_base
+  ApplicationId: com.example.learnopengl.advanced_lighting.shadow_mapping_base
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 60/91: :5.advanced_lighting:3.1.3.shadow_mapping
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\3.1.3.shadow_mapping
+  ApplicationId: com.example.learnopengl.advanced_lighting.shadow_mapping
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 61/91: :5.advanced_lighting:3.2.1.point_shadows
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\3.2.1.point_shadows
+  ApplicationId: com.example.learnopengl.advanced_lighting.point_shadows
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 62/91: :5.advanced_lighting:3.2.2.point_shadows_soft
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\3.2.2.point_shadows_soft
+  ApplicationId: com.example.learnopengl.advanced_lighting.point_shadows_soft
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 63/91: :5.advanced_lighting:4.normal_mapping
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\4.normal_mapping
+  ApplicationId: com.example.learnopengl.advanced_lighting.normal_mapping
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 64/91: :5.advanced_lighting:5.1.parallax_mapping
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\5.1.parallax_mapping
+  ApplicationId: com.example.learnopengl.advanced_lighting.parallax_mapping
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 65/91: :5.advanced_lighting:5.2.steep_parallax_mapping
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\5.2.steep_parallax_mapping
+  ApplicationId: com.example.learnopengl.advanced_lighting.steep_parallax_mapping
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 66/91: :5.advanced_lighting:5.3.parallax_occlusion_mapping
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\5.3.parallax_occlusion_mapping
+  ApplicationId: com.example.learnopengl.advanced_lighting.parallax_occlusion_mapping
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 67/91: :5.advanced_lighting:6.hdr
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\6.hdr
+  ApplicationId: com.example.learnopengl.advanced_lighting.hdr
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 68/91: :5.advanced_lighting:7.bloom
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\7.bloom
+  ApplicationId: com.example.learnopengl.advanced_lighting.bloom
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 69/91: :5.advanced_lighting:8.1.deferred_shading
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\8.1.deferred_shading
+  ApplicationId: com.example.learnopengl.advanced_lighting.deferred_shading
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 70/91: :5.advanced_lighting:8.2.deferred_shading_volumes
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\8.2.deferred_shading_volumes
+  ApplicationId: com.example.learnopengl.advanced_lighting.deferred_shading_volumes
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 71/91: :5.advanced_lighting:9.ssao
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\5.advanced_lighting\9.ssao
+  ApplicationId: com.example.learnopengl.advanced_lighting.ssao
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 72/91: :6.pbr:1.1.lighting
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\6.pbr\1.1.lighting
+  ApplicationId: com.example.learnopengl.pbr.lighting
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 73/91: :6.pbr:1.2.lighting_textured
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\6.pbr\1.2.lighting_textured
+  ApplicationId: com.example.learnopengl.pbr.lighting_textured
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 74/91: :6.pbr:2.1.1.ibl_irradiance_conversion
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\6.pbr\2.1.1.ibl_irradiance_conversion
+  ApplicationId: com.example.learnopengl.pbr.ibl_irradiance_conversion
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 75/91: :6.pbr:2.1.2.ibl_irradiance
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\6.pbr\2.1.2.ibl_irradiance
+  ApplicationId: com.example.learnopengl.pbr.ibl_irradiance
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 76/91: :6.pbr:2.2.1.ibl_specular
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\6.pbr\2.2.1.ibl_specular
+  ApplicationId: com.example.learnopengl.pbr.ibl_specular
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 77/91: :6.pbr:2.2.2.ibl_specular_textured
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\6.pbr\2.2.2.ibl_specular_textured
+  ApplicationId: com.example.learnopengl.pbr.ibl_specular_textured
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 78/91: :7.in_practice:1.debugging
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\7.in_practice\1.debugging
+  ApplicationId: com.example.learnopengl.in_practice.debugging
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 79/91: :7.in_practice:2.text_rendering
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\7.in_practice\2.text_rendering
+  ApplicationId: com.example.learnopengl.in_practice.text_rendering
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 80/91: :8.guest:2020:oit
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2020\oit
+  ApplicationId: com.example.learnopengl.guest_2020.oit
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 81/91: :8.guest:2020:skeletal_animation
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2020\skeletal_animation
+  ApplicationId: com.example.learnopengl.guest_2020.skeletal_animation
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 82/91: :8.guest:2021:1.scene:1.scene_graph
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_1.scene\1.scene_graph
+  ApplicationId: com.example.learnopengl.guest_2021_scene.scene_graph
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 83/91: :8.guest:2021:1.scene:2.frustum_culling
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_1.scene\2.frustum_culling
+  ApplicationId: com.example.learnopengl.guest_2021_scene.frustum_culling
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 84/91: :8.guest:2021:2.csm
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021\2.csm
+  ApplicationId: com.example.learnopengl.guest_2021.csm
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 85/91: :8.guest:2021:3.tessellation:terrain_gpu_dist
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_3.tessellation\terrain_gpu_dist
+  ApplicationId: com.example.learnopengl.guest_2021_tessellation.terrain_gpu_dist
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 86/91: :8.guest:2021:3.tessellation:terrain_cpu_src
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021_3.tessellation\terrain_cpu_src
+  ApplicationId: com.example.learnopengl.guest_2021_tessellation.terrain_cpu_src
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 87/91: :8.guest:2021:4.dsa
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2021\4.dsa
+  ApplicationId: com.example.learnopengl.guest_2021.dsa
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 88/91: :8.guest:2022:5.computeshader_helloworld
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022\5.computeshader_helloworld
+  ApplicationId: com.example.learnopengl.guest_2022.computeshader_helloworld
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 89/91: :8.guest:2022:6.physically_based_bloom
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022\6.physically_based_bloom
+  ApplicationId: com.example.learnopengl.guest_2022.physically_based_bloom
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 90/91: :8.guest:2022:7.area_lights:1.area_light
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022_7.area_lights\1.area_light
+  ApplicationId: com.example.learnopengl.guest_2022_area_lights.area_light
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+Processing module 91/91: :8.guest:2022:7.area_lights:2.multiple_area_lights
+  Target: g:\Workspaces\cpp\LearnOpenGL\android\8.guest_2022_7.area_lights\2.multiple_area_lights
+  ApplicationId: com.example.learnopengl.guest_2022_area_lights.multiple_area_lights
+  Created directory
+  Starting copy...
+    Copying: build.gradle.kts
+    Copied file: build.gradle.kts
+    Copying: src
+    Copied dir: src
+  Copied files successfully
+  Updated build.gradle.kts
+  Updated CMakeLists.txt
+  Updated MyGLRenderer.kt
+  Updated strings.xml
+  Done!
+
+All modules processed successfully!
