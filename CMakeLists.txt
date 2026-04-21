@@ -22,6 +22,7 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 # Add external libraries from source
 add_subdirectory(external/glfw)
 add_subdirectory(external/assimp)
+include_directories(external/assimp/include)
 
 # GLM is header-only, so we just need to include its directory
 include_directories(external/glm)
